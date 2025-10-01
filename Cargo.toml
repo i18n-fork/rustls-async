@@ -1,10 +1,10 @@
 [package]
-name = "async-rustls-stream"
+name = "rustls_async"
 version = "0.1.1"
 edition = "2024"
 description = "An async TLS stream wrapper based on rustls and futures-io. / 一个基于 rustls 和 futures-io 的异步 TLS 流封装库。"
-license = "MIT OR Apache-2.0"
-repository = "https://github.com/hs-CN/async-rustls-stream"
+license = "MulanPSL-2.0"
+repository = "https://github.com/i18n-fork/rustls-async"
 keywords = ["async", "tls", "rustls", "futures", "security"]
 categories = ["asynchronous", "network-programming"]
 
