@@ -6,7 +6,7 @@ use std::{
 };
 
 use async_executor::Executor;
-use async_rustls_stream::{TlsAccepted, TlsConnector};
+use rustls_async::{TlsAccepted, TlsConnector};
 use blocking::Unblock;
 use futures_lite::{AsyncBufReadExt, AsyncReadExt, AsyncWriteExt, io::BufReader};
 use rustls::ServerConfig;

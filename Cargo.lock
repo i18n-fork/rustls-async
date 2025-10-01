@@ -67,21 +67,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "async-rustls-stream"
-version = "0.1.1"
-dependencies = [
- "async-executor",
- "async-io",
- "async-net",
- "blocking",
- "futures-io",
- "futures-lite",
- "rustls",
- "rustls-pemfile",
- "webpki-roots",
-]
-
-[[package]]
 name = "async-task"
 version = "4.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -596,6 +581,21 @@ dependencies = [
  "ring",
  "rustls-pki-types",
  "untrusted",
+]
+
+[[package]]
+name = "rustls_async"
+version = "0.1.1"
+dependencies = [
+ "async-executor",
+ "async-io",
+ "async-net",
+ "blocking",
+ "futures-io",
+ "futures-lite",
+ "rustls",
+ "rustls-pemfile",
+ "webpki-roots",
 ]
 
 [[package]]
