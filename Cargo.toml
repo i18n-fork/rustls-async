@@ -1,25 +1,25 @@
 [package]
 name = "async-rustls-stream"
 version = "0.1.1"
-edition = "2021"
-description = "An async tls stream library based on rustls and futures-io. Both for server/client."
+edition = "2024"
+description = "An async TLS stream wrapper based on rustls and futures-io. / 一个基于 rustls 和 futures-io 的异步 TLS 流封装库。"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/hs-CN/async-rustls-stream"
-keywords = ["async", "tls", "rustls", "stream"]
+keywords = ["async", "tls", "rustls", "futures", "security"]
 categories = ["asynchronous", "network-programming"]
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rustls = "0.20.6"
-futures-io = "0.3.24"
+rustls = "0.23.32"
+futures-io = "0.3.31"
 
 [dev-dependencies]
-blocking = "1.2.0"
-async-io = "1.9.0"
-async-executor = "1.4.1"
-rustls-pemfile = "1.0.1"
-webpki-roots = "0.22.5"
-futures-lite = "1.12.0"
-async-net = "1.7.0"
+blocking = "1.6.2"
+async-io = "2.6.0"
+async-executor = "1.13.3"
+rustls-pemfile = "2.2.0"
+webpki-roots = "1.0.2"
+futures-lite = "2.6.1"
+async-net = "2.0.0"
