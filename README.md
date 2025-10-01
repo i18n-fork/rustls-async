@@ -2,7 +2,7 @@
 
 <a name="english"></a>
 
-# rustls-async
+# rustls_async
 
 An async TLS stream wrapper library based on [rustls](https://crates.io/crates/rustls) and [futures-io](https://crates.io/crates/futures-io), providing a unified interface for both server and client applications.
 
@@ -113,13 +113,13 @@ For a complete, runnable example, see the code in the `examples/` directory.
 
 The `rustls` library, which this project depends on, was created partly in response to a desire for a more modern and memory-safe alternative to OpenSSL. The security landscape of the internet was dramatically altered in 2014 by the "Heartbleed" bug in OpenSSL. This vulnerability allowed attackers to read the memory of servers, exposing sensitive data like private keys, passwords, and personal user information. It was a stark reminder of the dangers of memory safety issues (like buffer over-reads) in critical security software.
 
-`rustls` leverages the safety guarantees of the Rust language to eliminate entire classes of bugs, including the one that caused Heartbleed. By building on `rustls`, `rustls-async` inherits these security benefits, contributing to a more secure ecosystem for asynchronous applications in Rust.
+`rustls` leverages the safety guarantees of the Rust language to eliminate entire classes of bugs, including the one that caused Heartbleed. By building on `rustls`, `rustls_async` inherits these security benefits, contributing to a more secure ecosystem for asynchronous applications in Rust.
 
 ---
 
 <a name="中文"></a>
 
-# rustls-async
+# rustls_async
 
 一个基于 [rustls](https://crates.io/crates/rustls) 和 [futures-io](https://crates.io/crates/futures-io) 的异步 TLS 流封装库，为服务端和客户端应用提供统一的接口。
 
@@ -230,4 +230,4 @@ stream.flush().await.unwrap();
 
 本项目所依赖的 `rustls` 库，其诞生在一定程度上是为了响应业界对一个更现代、更内存安全的 OpenSSL 替代品的需求。2014 年，OpenSSL 中的 "Heartbleed"（心脏出血）漏洞极大地改变了互联网的安全格局。该漏洞允许攻击者读取服务器内存，暴露了私钥、密码和用户个人信息等敏感数据。它深刻地提醒了人们，在关键安全软件中，内存安全问题（如缓冲区溢出读取）是多么危险。
 
-`rustls` 利用 Rust 语言的内存安全保证，从根本上消除了包括导致 Heartbleed 的那类 bug。通过建立在 `rustls` 之上，`rustls-async` 继承了这些安全优势，为 Rust 中的异步应用程序构建了一个更安全的生态系统。
+`rustls` 利用 Rust 语言的内存安全保证，从根本上消除了包括导致 Heartbleed 的那类 bug。通过建立在 `rustls` 之上，`rustls_async` 继承了这些安全优势，为 Rust 中的异步应用程序构建了一个更安全的生态系统。
